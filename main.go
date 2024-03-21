@@ -21,8 +21,8 @@ func main() {
 	// Func Categories
 	http.HandleFunc("/categories", categorycontrollers.Index)
 	http.HandleFunc("/categories/Add", categorycontrollers.Add)
-	http.HandleFunc("/categories/Edit", categorycontrollers.Edit)
-	http.HandleFunc("/categories/Delete", categorycontrollers.Delete)
+	// http.HandleFunc("/categories/Edit", categorycontrollers.Edit)
+	// http.HandleFunc("/categories/Delete", categorycontrollers.Delete)
 
 	log.Printf("listen and serve my brody")
 	http.ListenAndServe(":8080", nil)
