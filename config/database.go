@@ -16,6 +16,6 @@ func ConnectDB()  {
 	}
 	
 
-	log.Println("Connect DB succesfully")
+	log.Println("koneksi Database berhasil")
 	DB = db
 }

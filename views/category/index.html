@@ -52,8 +52,8 @@
                 <td>{{ .CreatedAt}}</td>
                 <td>{{ .UpdatedAt}}</td>
                 <td>
-                    <a href="/categories/edit?id={{ .Id }}" class="btn btn-warning text-light">Edit</a>
-                    <a href="/categories/delete?id={{ .Id }}" class="btn btn-danger text-light" onclick="return confirm('Are you sure to delete this category?')">Delete</a>
+                    <a href="/categories/Edit?id={{ .Id }}" class="btn btn-warning text-light">Edit</a>
+                    <a href="/categories/Delete?id={{ .Id }}" class="btn btn-danger text-light" onclick="return confirm('Are you sure to delete this category?')">Delete</a>
                 </td>
             </tr>
             {{end}}
