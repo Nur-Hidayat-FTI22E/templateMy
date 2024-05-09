@@ -14,8 +14,10 @@ import (
 // }
 
 func main() {
+	// Connect to the database
 	config.ConnectDB()
 
+	// Func Home
 	http.HandleFunc("/", homecontrollers.Welcome)
 
 	// Func Categories
@@ -26,8 +28,12 @@ func main() {
 
 	// go for golang
 
-	log.Printf("listen and serve my brody")
-	http.ListenAndServe(":8080", nil)
+	log.Printf("listen and serve my brody(8080)")
 
-	
+	// Listen and serve
+	// The first parameter is the port
+	// The second parameter is the handler
+	// The handler is nil, which means to use the default handler
+	// The default handler is DefaultServeMux
+	http.ListenAndServe(":8080", nil)
 }
